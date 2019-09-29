@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Image recognition</title>
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container" style="margin-top:20px">
+    <h1 align="center">
+      Tensorflow.js - Image recognition
+    </h1>
+    <br></br>
+    <p>
+      The next page show a application of tensorflow.js library for image recognition
+        <li>Upload a image.</li>
+        <li>The model will predict the image.</li>
+    </p>
+    <br></br>
+    <input type="file" onchange="showFiles(event)" accept=".png, .jpg, .jpeg">
+    <br></br>
+    <center>
+    <img id='idImage' style="width: 224px; height: 224px;" align="center">
+    </center>
+    <!--<div id='console'></div>-->
+    <br></br>
+    <center><div id="chart_div"></div></center>
+    <script src="index.js"></script>
+    <br></br>
+</body>
+</div>
+<script type="text/javascript">
+</script>
+</html>
